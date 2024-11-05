@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet prefetch" href="https://gist.githubusercontent.com/mfd/614e2e80a22b878bde63cb471cbe677e/raw/eef2aabfd0d588d43285431186a0cf70305ceb80/sanfrancisco-font.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <button id="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="js/scrolltotop.js"></script>
+
+    <nav class="navbar">
+        <div class="container">
+            <!-- 로고 -->
+            <a class="logo" href="#">
+                <img src="images/logoblack.png" alt="Logo" height="40">
+            </a>
+
+            <!-- 중앙 메뉴 -->
+            <div class="nav-center">
+                <ul class="nav-menu">
+                    <li class="nav-item dropdown">
+                        <a href="brand.html">BRAND</a>
+                        <div class="dropdown-menu mega-menu">
+                            <div class="mega-menu-container">
+                                <div class="menu-content">
+                                    <!-- 상단 메뉴 항목들 -->
+                                    <ul class="sub-menu">
+                                        <li><a href="#">OHUI STORY</a></li>
+                                        <li><a href="#">GALLERY</a></li>
+                                        <li><a href="#">NEWS</a></li>
+                                        <li><a href="#">THE FIRST MAISON</a></li>
+                                    </ul>
+                                    <!-- 하단 이미지들 -->
+                                    <div class="menu-images">
+                                        <div class="image-item">
+                                            <img src="images/09_prime.jpg" alt="OHUI STORY Image">
+                                            <span>OHUI STORY</span>
+                                        </div>
+                                        <div class="image-item">
+                                            <img src="images/09_essense.jpg" alt="GALLERY Image">
+                                            <span>GALLERY</span>
+                                        </div>
+                                        <div class="image-item">
+                                            <img src="images/gnb3.png" alt="NEWS Image">
+                                            <span>NEWS</span>
+                                        </div>
+                                        <div class="image-item">
+                                            <img src="images/gnb4.png" alt="THE FIRST MAISON Image">
+                                            <span>THE FIRST MAISON</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#">BEST</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#">SKIN CARE</a>
+                        <div class="dropdown-menu category-menu">
+                            <div class="mega-menu-container">
+                                <div class="menu-content category-content">
+                                    <div class="category-section">
+                                        <h3>제품 유형별</h3>
+                                        <ul class="category-list">
+                                            <li><a href="#">스킨/토너</a></li>
+                                            <li><a href="#">에멀전/로션</a></li>
+                                            <li><a href="#">세럼/에센스</a></li>
+                                            <li><a href="#">크림</a></li>
+                                            <li><a href="#">아이케어</a></li>
+                                            <li><a href="#">마스크/팩</a></li>
+                                            <li><a href="#">클렌저</a></li>
+                                            <li><a href="#">선케어</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="category-section">
+                                        <h3>제품 라인별</h3>
+                                        <ul class="category-list">
+                                            <li><a href="#">프라임 어드밴서</a></li>
+                                            <li><a href="#">미라클 모이스처</a></li>
+                                            <li><a href="#">익스트림 화이트</a></li>
+                                            <li><a href="#">에이지 리커버리</a></li>
+                                            <li><a href="#">안티트러블</a></li>
+                                            <li><a href="#">퍼펙트 선</a></li>
+                                            <li><a href="#">클린 솔루션</a></li>
+                                            <li><a href="#">더마 힐링</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="category-images">
+                                        <div class="image-item">
+                                            <img src="images/frimeadvanture2.jpg" alt="New Product">
+                                            <span>신제품</span>
+                                        </div>
+                                        <div class="image-item">
+                                            <img src="images/altimit.jpg" alt="Best Seller">
+                                            <span>베스트셀러</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#">MAKE UP</a>
+                        <div class="dropdown-menu category-menu">
+                            <div class="mega-menu-container">
+                                <div class="menu-content category-content">
+                                    <div class="category-section">
+                                        <h3>제품 유형별</h3>
+                                        <ul class="category-list">
+                                            <li><a href="#">클렌징</a></li>
+                                            <li><a href="#">스킨소프너</a></li>
+                                            <li><a href="#">에센스/세럼</a></li>
+                                            <li><a href="#">앰플</a></li>
+                                            <li><a href="#">에멀전</a></li>
+                                            <li><a href="#">크림</a></li>
+                                            <li><a href="#">아이크림</a></li>
+                                            <li><a href="#">스페셜케어</a></li>
+                                            <li><a href="#">선케어</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="category-section">
+                                        <h3>제품 라인별</h3>
+                                        <ul class="category-list">
+                                            <li><a href="#">더 퍼스트 제너츄어</a></li>
+                                            <li><a href="#">프라임 어드밴서</a></li>
+                                            <li><a href="#">미라클 토닝</a></li>
+                                            <li><a href="#">미라클 모이스처</a></li>
+                                            <li><a href="#">미라클 아쿠아</a></li>
+                                            <li><a href="#">에이지 리커버리</a></li>
+                                            <li><a href="#">익스트림 화이트</a></li>
+                                            <li><a href="#">데이쉴드</a></li>
+                                            <li><a href="#">더 퍼스트 제너츄어 포맨</a></li>
+                                            <li><a href="#">마이스터 포맨</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="category-images">
+                                        <div class="image-item">
+                                            <img src="images/thefirst.jpg" alt="New Product">
+                                            <span>신제품</span>
+                                        </div>
+                                        <div class="image-item">
+                                            <img src="images/frimeadvanture.jpg" alt="Best Seller">
+                                            <span>베스트셀러</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#">SPECIAL SET</a></li>
+                    <li class="nav-item"><a href="#">EVENT</a></li>
+                    <li class="nav-item"><a href="#">MEMBERSHIP</a></li>
+                </ul>
+            </div>
+
+            <!-- 오른쪽 메뉴 -->
+            <div class="nav-right">
+                <a href="#">LOGIN</a>
+                <a href="#">MY PAGE</a>
+                <a href="#">CART</a>
+                <a href="#">STORE</a>
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main_container">
+
+        <div class="landing">
+
+            <div class="video-container">
+                <video autoplay muted loop class="responsive-video">
+                    <source src="video/ouhivideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+        </div>
+    </div>
+
+<!--     <div class="product_wrap">
+    <div class="product_container">
+        <div class="new_product">
+            <div class="text-content">
+                <h1 id="product-title">New Product</h1>
+                <h2 id="product-subtitle">THE FIRST GENITURE</h2>
+                <p id="product-description">피부 근본으로부터 다시 깨어나는 변화 <br> 영원히 빛나는 아름다움</p>
+                <div class="progress-bar-container">
+                    <span class="progress-label">01</span>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <span class="progress-label">02</span>
+                    <button class="prev-btn">&#10094;</button>
+                    <button class="next-btn">&#10095;</button> 
+                </div>
+            </div>
+            <div class="slider-container">
+                <img id="product-image" class="newproduct1" src="images/New product.png" alt="">
+            </div>
+        </div>
+    </div>
+</div> -->
+
+    <!-- 새로운 제품 섹션 추가 -->
+    <section class="ohui-product-showcase">
+        <h2 data-aos="fade-left" data-aos-offset="300">NEW PRODUCT</h2>
+        <div class="ohui-slider-wrapper">
+            <button class="ohui-nav-btn ohui-prev">❮</button>
+            <div class="ohui-showcase-content">
+                <div class="ohui-slides-container">
+                    <!-- 슬라이드 1 -->
+                    <div class="ohui-product-panel">
+                        <div class="ohui-hero-image">
+                            <img src="images/people1.png" alt="메인 제품 이미지">
+                        </div>
+                        <div class="ohui-product-info">
+                            <div class="ohui-product-layout">
+                                <div class="ohui-product-card">
+                                    <img class="primary-image" src="images/product3.jpg.png" alt="제품1">
+                                    <img class="hover-image" src="images/product3hov.jpg" alt="제품 호버 이미지">
+                                    <h3>프라임 어드밴서 에센스</h3>
+                                    <div class="hashtags">
+                                        <span>#수분케어</span>
+                                        <span>#안티에이징</span>
+                                        <span>#브라이트닝</span>
+                                    </div>
+                                    <p class="price">89,000원</p>
+                                </div>
+                                <div class="ohui-product-card">
+                                    <img class="primary-image" src="images/product4or.png.jpg" alt="제품2">
+                                    <img class="hover-image" src="images/product4.jpg" alt="제품 호버 이미지">
+                                    <h3>미라클 모이스처 크림</h3>
+                                    <div class="hashtags">
+                                        <span>#보습</span>
+                                        <span>#영양공급</span>
+                                        <span>#탄력케어</span>
+                                    </div>
+                                    <p class="price">78,000원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 슬라이드 2 -->
+                    <div class="ohui-product-panel">
+                        <div class="ohui-hero-image">
+                            <img src="images/people2.png" alt="인 제품 이미지">
+                        </div>
+                        <div class="ohui-product-info">
+                            <div class="ohui-product-layout">
+                                <div class="ohui-product-card">
+                                    <img class="primary-image" src="images/product5.jpg" alt="제품2">
+                                    <img class="hover-image" src="images/product5hov.jpg" alt="제품 호버 이미지">
+                                    <h3>미라클토닝 글로우 크림</h3>
+                                    <div class="hashtags">
+                                        <span>#미백</span>
+                                        <span>#톤업</span>
+                                        <span>#광채</span>
+                                    </div>
+                                    <p class="price">95,000원</p>
+                                </div>
+                                <div class="ohui-product-card">
+                                    <img class="primary-image" src="images/product6.png" alt="제품1">
+                                    <img class="hover-image" src="images/product6hov.jpg" alt="제품 호버 이미지">
+                                    <h3>에이지 리커버리 크림</h3>
+                                    <div class="hashtags">
+                                        <span>#주름개선</span>
+                                        <span>#탄력</span>
+                                        <span>#리프팅</span>
+                                    </div>
+                                    <p class="price">120,000원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 슬라이드 3 -->
+                    <div class="ohui-product-panel">
+                        <div class="ohui-hero-image">
+                            <img src="images/people4.jpg" alt="메인 제품 이미지">
+                        </div>
+                        <div class="ohui-product-info">
+                            <div class="ohui-product-layout">
+                                <div class="ohui-product-card">
+                                    <img class="primary-image" src="images/product.png.jpg" alt="제품1">
+                                    <img class="hover-image" src="images/producthov.png" alt="제품 호버 이미지">
+                                    <h3>퍼펙트 선 프로텍터</h3>
+                                    <div class="hashtags">
+                                        <span>#자외선차단</span>
+                                        <span>#수분충전</span>
+                                        <span>#데일리케어</span>
+                                    </div>
+                                    <p class="price">45,000원</p>
+                                </div>
+                                <div class="ohui-product-card">
+                                    <img class="primary-image" src="images/product7.png" alt="제품1">
+                                    <img class="hover-image" src="images/product7hov.jpg" alt="제품 호버 이미지">
+                                    <h3>더마 힐링 토너</h3>
+                                    <div class="hashtags">
+                                        <span>#진정케어</span>
+                                        <span>#수분진정</span>
+                                        <span>#민감피부</span>
+                                    </div>
+                                    <p class="price">35,000원</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="ohui-nav-btn ohui-next">❯</button>
+        </div>
+
+        <script src="js/slide.js"></script>
+    </section>
+    
+
+<div class="best_pro_wrap">
+<div data-aos="fade-up"
+data-aos-duration="1000" class="best-product">
+    <h1>BEST PRODUCT</h1>
+</div>
+
+<div data-aos="fade-up"
+data-aos-duration="3000" class="best-product-left">
+    <h2>가장 사랑받는 오휘의 <br>
+        베스트 셀러를 확인해보세요</h2>
+        <button>view more</button>
+</div>
+<div class="bestproduct-container">
+    <div data-aos="fade-up"
+    data-aos-duration="2000" class="bestproduct-item1">
+
+        <div class="proimg_con">
+        <img class="product-image" src="images/bestproduct0.png" alt="Product 1">
+        <!-- <div class="overlay">
+            <div class="overlay-text">프라임 어드밴서 디에이징 앰플 세럼 20ml</div>
+        </div> -->
+    </div>
+
+        <div class="product-text">미라클 모이스처 세라마이드 부스팅 크림</div>
+    </div>
+    <div data-aos="fade-up"
+    data-aos-duration="2000" class="bestproduct-item2">
+
+    <div class="proimg_con">
+        <img class="product-image" src="images/bestproduct12.png" alt="Product 2">
+        <!-- <div class="overlay">
+            <div class="overlay-text">프라임 어드밴서 디에이징 앰플 세럼 20ml</div>
+        </div> -->
+    </div>
+
+        <div class="product-text">프라임 어드밴서 디에이징 앰플 세럼 20ml</div>
+    </div>
+    <div data-aos="fade-up"
+    data-aos-duration="2000" class="bestproduct-item3">
+
+    <div class="proimg_con">
+        <img class="product-image" src="images/bestproduct13.png" alt="Product 3">
+        <!-- <div class="overlay">
+            <div class="overlay-text">프라임 어드밴서 디에이징 앰플 세럼 20ml</div>
+        </div> -->
+    </div>
+        <div class="product-text">미라클 모이스처 립세린</div>
+    </div>
+</div>
+</div>
+
+
+<!-- skin -->
+
+<section class="skin_makeup">
+<div class="skin_con">
+    <div class="skin_wrap" id="left-content">
+        <h2>SKIN CARE</h2>
+        <p>편리한 사용, 제품보존의 기술, 고품질 용기 <br>
+            다에징을 위한 오휘의 스킨케어</p>
+    </div>
+
+    <div class="skin_con2" id="content-swap">
+        <div class="skin_left">
+            <div class="cleansing-box">
+                <h1>클렌징</h1>
+                <button class="arrow-btn right-arrow">&#10095;</button>
+            </div>
+
+            <div class="cleansing-box">
+                <h1>에센스/세럼</h1>
+                <button class="arrow-btn right-arrow">&#10095;</button>
+            </div>
+
+            <div class="cleansing-box">
+                <h1>앰플</h1>
+                <button class="arrow-btn right-arrow">&#10095;</button>
+            </div>
+
+            <div class="cleansing-box">
+                <h1>에멀전</h1>
+                <button class="arrow-btn right-arrow">&#10095;</button>
+            </div>
+
+            <div class="cleansing-box">
+                <h1>크림</h1>
+                <button class="arrow-btn right-arrow">&#10095;</button>
+            </div>
+
+            <div class="cleansing-box">
+                <h1>아이크림</h1>
+                <button class="arrow-btn right-arrow">&#10095;</button>
+            </div>
+
+            <div class="cleansing-box">
+                <h1>스페셜케어</h1>
+                <button class="arrow-btn right-arrow">&#10095;</button>
+            </div>
+
+            <div class="cleansing-box">
+                <h1>선케어</h1>
+                <button class="arrow-btn right-arrow">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="skin_image" id="skin-img">
+            <img src="images/skin care2.png" alt="스킨케어 이미지" />
+        </div>
+    </div>
+    
+</div>
+
+<div class="makeup_con">
+
+    <div class="makeup_con2" id="content-swap">
+        <div class="makeup_image" id="makeup-img">
+            <img src="images/makeup2.png" alt="메이업 이미지" />
+        </div>
+
+
+        <div class="makeup_wrap" id="left-content">
+            <h2>MAKEUP</h2>
+            <p>편리한 사용, 제품보존의 기술, 고품질 용기 <br>
+                다에징을 위한 오휘의 메이크업</p>
+
+                <div class="makeup_left">
+                    <div class="cleansing-box2">
+                        <h1>클렌징</h1>
+                        <button class="arrow-btn right-arrow">&#10095;</button>
+                    </div>
+        
+                    <div class="cleansing-box2">
+                        <h1>에센스/세럼</h1>
+                        <button class="arrow-btn right-arrow">&#10095;</button>
+                    </div>
+        
+                    <div class="cleansing-box2">
+                        <h1>앰플</h1>
+                        <button class="arrow-btn right-arrow">&#10095;</button>
+                    </div>
+        
+                    <div class="cleansing-box2">
+                        <h1>에멀전</h1>
+                        <button class="arrow-btn right-arrow">&#10095;</button>
+                    </div>
+        
+                    <div class="cleansing-box2">
+                        <h1>크림</h1>
+                        <button class="arrow-btn right-arrow">&#10095;</button>
+                    </div>
+        
+                    <div class="cleansing-box2">
+                        <h1>아이크림</h1>
+                        <button class="arrow-btn right-arrow">&#10095;</button>
+                    </div>
+        
+                    <div class="cleansing-box2">
+                        <h1>스페셜케어</h1>
+                        <button class="arrow-btn right-arrow">&#10095;</button>
+                    </div>
+        
+                    <div class="cleansing-box2">
+                        <h1>선케어</h1>
+                        <button class="arrow-btn right-arrow">&#10095;</button>
+                    </div>
+                </div>
+        </div>
+        
+    </div>
+
+</div>
+
+</section>
+
+
+
+
+<!--  OUR BRAND -->
+<section class="brand_con">
+    <div data-aos="fade-right"
+    data-aos-offset="300" class="brand_wrap">
+        <h2>Our Journey Towards</h2>
+        <div class="brand_image_container" onclick="location.href='brand.html'" style="cursor: pointer;">
+            <div class="overlay"></div>
+            <img src="images/brandstory.jpg" alt="" >
+            <h1 data-aos="fade-right"
+            data-aos-offset="100">DEAIGIN</h1>
+            <p data-aos="fade-right"
+            data-aos-offset="100">1997년부터 혁신적인 연구로 완성한 진보된 '디에이징' 피부 과학으로 <br>
+                영원히 빛나는 아름다움을 경험해보세요.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- last_section -->
+<section class="store_con">
+<div data-aos="fade-left" data-aos-offset="300"  class="last_section">
+    <h2>STORE</h2>
+    <p>당신과 가까이 있는 오휘를 찾아보세요</p>
+    <div data-aos="fade-left" data-aos-offset="100"
+    data-aos-delay="200" class="image-wrapper">
+        <img src="images/last.jpg" alt="Store Image" class="store-image">
+    </div>
+</div>
+</section>
+
+
+
+
+<footer class="footer">
+    <div class="footer-left">
+        <img src="images/logowhite.png" alt="로고" class="footer-logo">
+        <div class="footer-info">
+            <p>(주) 엘지생활건강</p>
+            <p>대표 : 이정애</p>
+            <p>사업자등록번호 : 107-81-98143</p>
+            <p>주소 : 서울특별시 종로구 신문로2가 LG광화문빌딩</p>
+            <p>통신판매업 신고 : 2011-서울종로-01902011-서울종로-0190 <a href="#" class="business-info">[사업자정보확인]</a></p>
+            <p>개인정보보호책임자 : 강일만 (privacy@lghnh.com)</p>
+            <p>Copyright © ohui. All rights reserved.</p>
+        </div>
+    </div>
+    
+    <div class="footer-right">
+        <p>080-023-7007</p>
+        <p>평일 09:00 ~ 17:30 (점심 12:00 ~ 13:00)</p>
+        
+        <div class="social-icons">
+            <img src="images/instagram.png" alt="Instagram">
+            <img src="images/kakao.png" alt="Kakao">
+            <img src="images/youtube.png" alt="YouTube">
+        </div>
+        
+        <div class="footer-links">
+            <a href="#">사업자정보확인</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">이용약관</a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+
+<script>
+    AOS.init();
+  </script>
+      <!-- 부드러운 스크롤 플러그인 -->
+      <script>
+        // Initialize Lenis
+    const lenis = new Lenis();
+    
+    // Listen for the scroll event and log the event data
+    lenis.on('scroll', (e) => {
+      console.log(e);
+    });
+    
+    // Use requestAnimationFrame to continuously update the scroll
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    
+    requestAnimationFrame(raf);
+    
+    </script>
+
+<script src="js/nav.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/skin.js"></script>
+<script src="js/last.js"></script>
+<script src="js/header.js"></script>
+<script src="js/roundani.js"></script>
+
+</html>
