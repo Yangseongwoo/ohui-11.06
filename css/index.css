@@ -707,7 +707,7 @@ button.prev-btn {
 
 
 /* PC 버전 */
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
     .ohui-product-panel {
         flex-direction: row; /* 가로 방향으로 배치 */
         justify-content: space-between; /* 요소 사이의 공간을 균등하게 */
@@ -967,7 +967,7 @@ body.menu-open {
 }
 
 
-@media (min-width: 1024px) and (max-width: 1920px){
+@media (min-width: 1024px) and (max-width: 1910px){
     .bestproduct-item3 {
         padding-bottom: 30%;
         padding-left: 0%;
